@@ -1,0 +1,3 @@
+[submodule "aoc2025_inputs"]
+	path = inputs
+	url = git@github.com:gagnonlg/aoc2025_inputs.git
