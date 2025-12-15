@@ -1,2 +1,3 @@
 aoc2025
 *.o
+src/days.hpp
