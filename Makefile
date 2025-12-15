@@ -2,7 +2,7 @@ CXXFLAGS = -O3 -Wall -Wextra -Werror -std=c++23 -pedantic -pedantic-errors
 ifeq ($(DEBUG), 1)
 	CXXFLAGS = -O0 -g --std=c++23
 endif
-CHECKFLAGS = --enable=all --std=c++23 --error-exitcode=1 --check-level=exhaustive --suppress=missingIncludeSystem --suppress=checkersReport --suppress=unusedFunction --suppress=unmatchedSuppression
+CHECKFLAGS = --enable=all --std=c++23 --error-exitcode=1 --check-level=exhaustive --suppress=missingIncludeSystem --suppress=checkersReport --suppress=unusedFunction --suppress=unmatchedSuppression --inline-suppr
 TIDYFLAGS = -checks=bugprone-*,cert-*,cppcoreguidelines-*,hicpp-*,misc-*,-misc-use-internal-linkage,modernize-*,performance-*,portability-*,readability-*  --warnings-as-errors=*
 
 # Work around the clang-tidy bug
